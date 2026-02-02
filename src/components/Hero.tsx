@@ -19,7 +19,7 @@ export function Hero() {
         Rafiq Ul Islam holds a PhD degree from University of Calabria, Italy. He has been member of <a className="underline hover:text-brand-700" href="https://labs.dimes.unical.it/speme/people/" target="_blank" rel="noreferrer">SPEME</a> Lab since 2022. He has also been a visiting researcher at University of Polytechnic, Valencia. His research focuses on building privacy-preserving embedded AI systems for real-world smart environments, with a focus on TinyML deployment, robust sensing, and secure edge-to-cloud pipelines.
       </p>
 
-          <div className="flex flex-col gap-2 text-sm text-slate-700">
+          {/* <div className="flex flex-col gap-2 text-sm text-slate-700">
             <div className="flex items-center gap-2"><MapPin size={16} className="text-slate-500" /> {profile.location}</div>
             <div className="flex items-center gap-2"><Mail size={16} className="text-slate-500" /> <a className="hover:underline" href={`mailto:${profile.email}`}>{profile.email}</a></div>
             <div className="flex items-center gap-2"><Phone size={16} className="text-slate-500" /> <a className="hover:underline" href={`tel:${profile.phone}`}>{profile.phone}</a></div>
@@ -37,16 +37,16 @@ export function Hero() {
                 {l.label} <ExternalLink size={14} className="text-slate-400" />
               </a>
             ))}
-          </div>
+          </div> */}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.05 }}
           className="flex flex-col items-center gap-3"
         >
-          <div className="w-56 h-56 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+          <div className="w-44 h-44 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
             {/* Put your photo at: public/assets/profile.jpg */}
             <img
               src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
@@ -61,7 +61,58 @@ export function Hero() {
             />
           </div>
           <p className="text-xs text-slate-500"></p>
-        </motion.div>
+        </motion.div> */}
+    <motion.div
+  initial={{ opacity: 0, scale: 0.98 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.3, delay: 0.05 }}
+  className="flex flex-col items-center gap-4"
+>
+  {/* Profile Image */}
+  <div className="w-44 h-44 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+    <img
+      src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+      alt="Profile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Contact Info */}
+  <div className="flex flex-col items-center gap-1 text-sm text-slate-700">
+    <div className="flex items-center gap-2">
+      <MapPin size={16} className="text-slate-500" />
+      {profile.location}
+    </div>
+    <div className="flex items-center gap-2">
+      <Mail size={16} className="text-slate-500" />
+      <a href={`mailto:${profile.email}`} className="hover:underline">
+        {profile.email}
+      </a>
+    </div>
+    <div className="flex items-center gap-2">
+      <Phone size={16} className="text-slate-500" />
+      <a href={`tel:${profile.phone}`} className="hover:underline">
+        {profile.phone}
+      </a>
+    </div>
+  </div>
+
+  {/* Social / Academic Links */}
+  <div className="flex flex-wrap justify-center gap-2 pt-1">
+    {profile.links.map((l) => (
+      <a
+        key={l.href}
+        href={l.href}
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-brand-300 hover:text-brand-700 transition"
+      >
+        {l.label}
+      </a>
+    ))}
+  </div>
+</motion.div>
+
       </div>
     </div>
   )
