@@ -15,7 +15,7 @@ export function Hero() {
           transition={{ duration: 0.3 }}
           className="flex flex-col gap-4"
         >
-          <p className="text-sm text-brand-700 font-medium">Available for Postdoc Positions</p>
+          <p className="text-sm text-brand-700 font-medium">Looking for Postdoc Positions</p>
 
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">
             {profile.name}
