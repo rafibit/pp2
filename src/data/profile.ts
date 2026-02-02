@@ -212,7 +212,7 @@ education: [
     end: "2015-08-30",
   },
 ],
-    awards: [
+awards: [
     {
       title: "Student Distinguished Award",
       org: "Beijing Institute of Technology",
