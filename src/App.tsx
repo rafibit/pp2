@@ -14,7 +14,7 @@ export default function App() {
       <Hero />
 
       <main className="mx-auto max-w-6xl px-4 pb-24">
-        <Section
+        {/* <Section
           id="about"
           title="Research interests"
           subtitle="My current focus areas (edit in src/data/profile.ts)."
@@ -26,9 +26,9 @@ export default function App() {
               ))}
             </ul>
           </div>
-        </Section>
+        </Section> */}
         
-        {/* <Section
+       <Section
           id="research"
           title="Recent Publications"
         >
@@ -49,7 +49,7 @@ export default function App() {
               {profile.links.find(l => l.label === 'Google Scholar')?.href ?? ''}
             </a>
           </p>
-        </Section> */}
+        </Section> 
 
         {/* ✅ Experience section (card style like old portal) */}
         <Section id="experience" title="Experience" >
