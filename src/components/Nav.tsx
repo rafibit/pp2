@@ -1,7 +1,7 @@
 import React from 'react'
 
 const links = [
-  { href: '#about', label: 'Research interests' },
+  { href: '#about', label: 'About' },
   { href: '#research', label: 'Publications' },
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
