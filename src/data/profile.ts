@@ -181,14 +181,13 @@ export const profile = {
       tags: ["Teaching"],
     },
   ],
-} as const
-research_interests: [
+  research_interests: [
   "Edge Intelligence / Edge AI",
   "Internet of Things",
   "Cyber-Physical Systems",
   "Embedded AI & IoT Systems",
   "Privacy-preserving on-device AI",
-],
+  ],
 
 education: [
   {
@@ -213,4 +212,6 @@ education: [
     end: "2015-08-30",
   },
 ],
+} as const
+
 
