@@ -46,7 +46,7 @@ export function Hero() {
           transition={{ duration: 0.3, delay: 0.05 }}
           className="flex flex-col items-center gap-3"
         >
-          <div className="w-56 h-56 rounded-3xl border border-slate-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+          <div className="w-56 h-56 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
             {/* Put your photo at: public/assets/profile.jpg */}
             <img
               src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
