@@ -28,7 +28,7 @@ export default function App() {
           </div>
         </Section>
         
-        <Section
+        {/* <Section
           id="research"
           title="Recent Publications"
         >
@@ -49,7 +49,7 @@ export default function App() {
               {profile.links.find(l => l.label === 'Google Scholar')?.href ?? ''}
             </a>
           </p>
-        </Section>
+        </Section> */}
 
         {/* ✅ Experience section (card style like old portal) */}
         <Section id="experience" title="Experience" >
