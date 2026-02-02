@@ -212,6 +212,19 @@ education: [
     end: "2015-08-30",
   },
 ],
+    awards: [
+    {
+      title: "Student Distinguished Award",
+      org: "Beijing Institute of Technology",
+      date: "2018-12-27",
+    },
+    {
+      title: "Best Volunteer Award",
+      org: "Beijing Institute of Technology",
+      date: "2018-12-27",
+    },
+  ],
+
 } as const
 
 
