@@ -127,6 +127,31 @@ export default function App() {
             ))}
           </div>
         </Section>
+                {/* Awards Section (at the end) */}
+        <Section id="awards" title="Awards" subtitle="Selected recognitions.">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <ul className="space-y-4">
+              {profile.awards.map((a) => (
+                <li
+                  key={`${a.title}-${a.date}`}
+                  className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 text-slate-700"
+                >
+                  <div>
+                    <span className="font-semibold text-slate-900">{a.title}</span>
+                    <span className="text-slate-600"> · {a.org}</span>
+                  </div>
+                  <div className="text-sm text-slate-500">
+                    {new Date(a.date).toLocaleDateString(undefined, {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Section>
 
         <Section id="contact" title="Contact">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -167,7 +192,7 @@ export default function App() {
             </div>
           </div>
         </Section>
-
+        
         <footer className="pt-10 text-xs text-slate-500">
           Created by: <code className="text-slate-700">Rafiq Ul Islam</code>.
         </footer>
