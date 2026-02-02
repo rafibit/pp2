@@ -27,24 +27,6 @@ export default function App() {
             </ul>
           </div>
         </Section>
-         {/* ✅ Skills section (grouped like old portal) */}
-        <Section id="skills" title="Skills" >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {profile.skills.map((g) => (
-              <div
-                key={g.group}
-                className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition"
-              >
-                <h3 className="font-semibold text-slate-900">{g.group}</h3>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {g.items.map((it) => (
-                    <Badge key={it}>{it}</Badge>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
         
         <Section
           id="research"
@@ -127,7 +109,24 @@ export default function App() {
     ))}
   </div>
 </Section>
-
+  {/* ✅ Skills section (grouped like old portal) */}
+        <Section id="skills" title="Skills" >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {profile.skills.map((g) => (
+              <div
+                key={g.group}
+                className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md transition"
+              >
+                <h3 className="font-semibold text-slate-900">{g.group}</h3>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {g.items.map((it) => (
+                    <Badge key={it}>{it}</Badge>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
 
         <Section id="contact" title="Contact">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
