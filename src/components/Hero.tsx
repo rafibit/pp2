@@ -39,29 +39,6 @@ export function Hero() {
             ))}
           </div> */}
         </motion.div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.3, delay: 0.05 }}
-          className="flex flex-col items-center gap-3"
-        >
-          <div className="w-44 h-44 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
-            {/* Put your photo at: public/assets/profile.jpg */}
-            <img
-              src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
-              alt="Profile"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                const el = e.currentTarget
-                el.style.display = 'none'
-                ;(el.parentElement as HTMLDivElement).innerHTML =
-                  '<div style="text-align:center;color:#64748b;font-size:14px;line-height:1.4;padding:16px;">Add your photo<br/>public/assets/profile.jpg</div>'
-              }}
-            />
-          </div>
-          <p className="text-xs text-slate-500"></p>
-        </motion.div> */}
     <motion.div
   initial={{ opacity: 0, scale: 0.98 }}
   animate={{ opacity: 1, scale: 1 }}
