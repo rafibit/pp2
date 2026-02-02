@@ -58,7 +58,7 @@ export const profile = {
       links: [{ label: "Code", href: "https://github.com/rafibit/artifacts-holding-power" }],
     },
     {
-      title: "Smart museum sensing & forecasting",
+      title: "Smart museum sensing & Forecasting artifact's Risk of Damage",
       one_liner:
         "A general-purpose sensing stack for smart environments with the smart museum as a practical deployment and evaluation case.",
       image: "research/general-purpose-sensing.png",
