@@ -60,7 +60,7 @@ export function Hero() {
           className="flex flex-col items-center gap-4"
         >
           {/* Profile Image */}
-          <div className="w-44 h-44 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+          <div className="w-55 h-55 rounded-full border-2 border-slate-200 ring-2 ring-brand-200 overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
             <img
               src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
               alt="Profile"
