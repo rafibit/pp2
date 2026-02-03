@@ -21,7 +21,7 @@ export function Nav() {
           ))}
         </nav>
         <a
-          className="text-sm rounded-full border border-slate-300 bg-white px-3 py-1.5 hover:border-brand-400 hover:text-brand-700 transition"
+          className="text-sm rounded-full bg-brand-600 text-white px-4 py-2 hover:bg-brand-700 transition shadow-sm"
           href="assets/Rafiq-ul-Islam-CV.pdf"
           target="_blank"
           rel="noreferrer"
