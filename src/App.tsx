@@ -128,7 +128,7 @@ export default function App() {
           </div>
         </Section>
                 {/* Awards Section (at the end) */}
-        <Section id="awards" title="Awards" subtitle="Selected recognitions.">
+        <Section id="awards" title="Awards & Professional Developement" >
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <ul className="space-y-4">
               {profile.awards.map((a) => (
@@ -152,7 +152,7 @@ export default function App() {
             </ul>
                 {/* Professional Development */}
     <div className="mt-8">
-      <h3 className="text-sm font-semibold text-slate-900">Professional Development</h3>
+      {/* <h3 className="text-sm font-semibold text-slate-900">Professional Development</h3> */}
       <ul className="mt-3 space-y-4">
         {profile.professional_development.map((p) => (
           <li
