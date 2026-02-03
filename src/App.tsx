@@ -205,7 +205,7 @@ export default function App() {
                 href="assets/Rafiq-ul-Islam-CV.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm hover:border-brand-300 hover:text-brand-700 transition"
+                className="rounded-full bg-brand-600 text-white px-4 py-2 text-sm hover:bg-brand-700 transition shadow-sm"
               >
                 Download CV
               </a>
