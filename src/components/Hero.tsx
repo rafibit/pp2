@@ -102,7 +102,7 @@ export function Hero() {
                 href={l.href}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm hover:border-brand-300 hover:text-brand-700 transition"
+                className="rounded-full bg-brand-100 text-brand-800 px-3 py-1.5 text-sm hover:bg-brand-200 transition"
               >
                 {l.label}
               </a>
