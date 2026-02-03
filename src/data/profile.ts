@@ -224,6 +224,26 @@ awards: [
       date: "2018-12-27",
     },
   ],
+  professional_development: [
+    {
+      title: "Summer School: IoT for eco friendly Tourism",
+      role: "Participant",
+      start: "2025-03-26",
+      end: "2025-03-28",
+    },
+    {
+      title: "Workshop IEEE@UNICAL",
+      role: "Attendee",
+      start: "2024-06-27",
+      end: "2024-06-27",
+    },
+    {
+      title: "The International Conference on Embedded Wireless Systems and Networks",
+      role: "Participant",
+      start: "2023-09-25",
+      end: "2023-09-27",
+    },
+  ],
 
 } as const
 
