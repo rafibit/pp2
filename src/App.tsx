@@ -150,6 +150,26 @@ export default function App() {
                 </li>
               ))}
             </ul>
+                {/* Professional Development */}
+    <div className="mt-8">
+      <h3 className="text-sm font-semibold text-slate-900">Professional Development</h3>
+      <ul className="mt-3 space-y-4">
+        {profile.professional_development.map((p) => (
+          <li
+            key={`${p.title}-${p.start}`}
+            className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 text-slate-700"
+          >
+            <div>
+              <span className="font-semibold text-slate-900">{p.title}</span>
+              <span className="text-slate-600"> · {p.role}</span>
+            </div>
+            <div className="text-sm text-slate-500">
+              {formatRange(p.start, p.end)}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
           </div>
         </Section>
 
