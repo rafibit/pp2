@@ -1,4 +1,4 @@
-# PhD Profile  Portal (Light Theme)
+# PhD Profile Portal (Light Theme)
 
 ## Quick start
 ```bash
