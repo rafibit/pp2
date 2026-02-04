@@ -185,8 +185,10 @@ export const profile = {
   "Edge Intelligence / Edge AI",
   "Internet of Things",
   "Cyber-Physical Systems",
-  "Embedded AI & IoT Systems",
-  "Privacy-preserving on-device AI",
+  "Human-centred and non-intrusive sensing",
+  "Embedded and edge-based machine learning,
+  "Privacy-aware perception and interaction systems",
+  "Smart environments and public-space interaction",
   ],
 
 education: [
