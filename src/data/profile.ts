@@ -186,7 +186,7 @@ export const profile = {
   "Internet of Things",
   "Cyber-Physical Systems",
   "Human-centred and non-intrusive sensing",
-  "Embedded and edge-based machine learning,
+  "Embedded and edge-based machine learning",
   "Privacy-aware perception and interaction systems",
   "Smart environments and public-space interaction",
   ],
