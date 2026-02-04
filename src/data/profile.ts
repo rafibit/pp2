@@ -4,7 +4,7 @@ export const profile = {
   subtitle:
     "Privacy-preserving on-device AI (TinyML/FOMO), secure IoT architectures (LoRaWAN/TTN), and edge-to-cloud analytics for smart environments & cultural heritage.",
   location: "Rende, Italy",
-  email: "rafishy.123@gmail.com",
+  email: "rafiqul.islam@dimes.unical.it",
   phone: "+39 345 874 7270",
   links: [
     { label: "GitHub", href: "https://github.com/rafibit" },
