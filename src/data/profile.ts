@@ -65,8 +65,8 @@ export const profile = {
       tags: ["IoT", "Smart Museums", "Time-series", "Edge-Cloud"],
       links: [
         {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=qTUg8-oAAAAJ",
+          label: "Full Paper",
+          href: "https://ieeexplore.ieee.org/abstract/document/11096222",
         },
       ],
     },
@@ -78,8 +78,8 @@ export const profile = {
       tags: ["UX", "Smart Museums", "Sensing", "Analytics"],
       links: [
         {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=qTUg8-oAAAAJ",
+          label: "Full Paper",
+          href: "https://ieeexplore.ieee.org/abstract/document/11118616",
         },
       ],
     },
@@ -91,8 +91,8 @@ export const profile = {
       tags: ["Edge AI", "IoT", "Safety"],
       links: [
         {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=qTUg8-oAAAAJ",
+          label: "Full Paper",
+          href: "https://www.mdpi.com/1999-5903/16/10/373",
         },
       ],
     },
@@ -104,8 +104,8 @@ export const profile = {
       tags: ["NDN", "Future Internet", "Networking"],
       links: [
         {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=qTUg8-oAAAAJ",
+          label: "Full Paper",
+          href: "https://www.sciencedirect.com/science/article/pii/S0167739X25000494?via%3Dihub",
         },
       ],
     },
@@ -117,8 +117,8 @@ export const profile = {
       tags: ["NDN", "Edge-Cloud", "Healthcare"],
       links: [
         {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=qTUg8-oAAAAJ",
+          label: "Full Paper",
+          href: "https://ieeexplore.ieee.org/abstract/document/11205249",
         },
       ],
     },
