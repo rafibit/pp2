@@ -7,7 +7,7 @@ export type ResearchCardT = {
   one_liner: string
   image: string
   tags: string[]
-  links?: { label: string; href: string }[]
+  links?: { label: string; href: string; download?: boolean }[]
 }
 
 export function ResearchCard({ item }: { item: ResearchCardT }) {
@@ -25,15 +25,30 @@ export function ResearchCard({ item }: { item: ResearchCardT }) {
         {item.links?.length ? (
           <div className="mt-4 flex flex-wrap gap-3">
             {item.links.map(l => (
-              <a
-                key={l.href}
-                href={l.href}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 text-sm rounded-full border border-slate-200 bg-white px-3 py-1.5 hover:border-brand-300 hover:text-brand-700 transition"
-              >
-                {l.label} <ExternalLink size={16} className="text-slate-400" />
-              </a>
+              // <a
+              //   key={l.href}
+              //   href={l.href}
+              //   target="_blank"
+              //   rel="noreferrer"
+              //   className="inline-flex items-center gap-2 text-sm rounded-full border border-slate-200 bg-white px-3 py-1.5 hover:border-brand-300 hover:text-brand-700 transition"
+              // >
+              //   {l.label} <ExternalLink size={16} className="text-slate-400" />
+              // </a>
+            <a
+              key={l.href}
+              href={l.download ? `${import.meta.env.BASE_URL}${l.href}` : l.href}
+              download={l.download ? "" : undefined}
+              target={l.download ? undefined : "_blank"}
+              rel={l.download ? undefined : "noreferrer"}
+              className={
+                  l.download
+                  ? "inline-flex items-center gap-2 text-sm rounded-full bg-brand-600 text-white px-4 py-2 hover:bg-brand-700 transition shadow-sm"
+                  : "inline-flex items-center gap-2 text-sm rounded-full bg-brand-100 text-brand-800 px-4 py-2 hover:bg-brand-200 transition"
+              }
+            >
+              {l.label}
+              {!l.download ? <ExternalLink size={16} className="text-slate-400" /> : null}
+        </a>
             ))}
           </div>
         ) : null}
