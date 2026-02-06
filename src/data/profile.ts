@@ -55,7 +55,7 @@ export const profile = {
         "On-device FOMO on Arduino Nicla Vision to measure visitor focus time, streamed via LoRaWAN for time-series analytics.",
       image: "research/tinyml-holding-power.png",
       tags: ["TinyML", "FOMO", "Nicla Vision", "LoRaWAN", "InfluxDB"],
-      links: [{ label: "Code", href: "https://github.com/rafibit/artifacts-holding-power" }, { label: "Download PDF", href: "assets/paper1.pdf", download: true }],
+      links: [{ label: "Code", href: "https://github.com/rafibit/artifacts-holding-power" }, { label: "Full Paper", href: "https://ieeexplore.ieee.org/document/11366583" }],
     },
     {
       title: "Smart museum sensing & Forecasting artifact's Risk of Damage",
